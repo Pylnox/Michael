@@ -1,9 +1,10 @@
---[[ local url = "https://discord.gg/gZwkVxemSV"
-setclipboard(url)
-print("Discord url has been copied to your clipboard!")
 --[[
 by xkyxal
 ]]
+
+local url = "https://discord.gg/gZwkVxemSV"
+setclipboard(url)
+print("Discord url has been copied to your clipboard!")
 
 if not getconnections or not hookmetamethod or not getnamecallmethod or not ((getgenv and getgenv()) or _G) then
 	game:GetService("StarterGui"):SetCore("SendNotification", {Title = "RylorHub",Text = "Executor is not supported!",Duration = 10,})
